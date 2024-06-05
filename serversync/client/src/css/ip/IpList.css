@@ -1,0 +1,124 @@
+.ip-list-container {
+  margin-right: 240px;
+  /* Adjust margin for positioning */
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(16, 16, 16, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  overflow-y: auto;
+  /* Add scrollbar */
+  width: calc(100% - 240px);
+  /* Adjust width to cover the whole page minus the sidebar width */
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.search-bar-content {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search-button {
+  flex-shrink: 0;
+}
+
+.suggestions-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 80%;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-list li {
+  padding: 8px 16px;
+}
+
+.suggestions-list li button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.suggestions-list li button:hover {
+  background-color: #f0f0f0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ip-table {
+  width: 100%;
+  min-width: 650px;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.ip-table th,
+.ip-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.status-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.status-dot.active {
+  background-color: green;
+}
+
+.status-dot.inactive {
+  background-color: red;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-size-selector {
+  margin-right: 20px;
+}
